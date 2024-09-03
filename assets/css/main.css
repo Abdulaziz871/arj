@@ -1575,11 +1575,13 @@ div.owl-controls, .owl-controls div {
   font-size: 18px;
   margin-bottom: 4px;
     text-align: right;
+    color:#FFF;
 }
 
 .list-box .content p {
   margin-bottom: 0px;
   opacity: 0.75;
+    color: #FFF;
 }
 
 .list-box .list-icon i {
@@ -2220,6 +2222,43 @@ a.video-play-btn {
                 flex-direction: column;
             }
         }
+
+
+@media (max-width: 1024px) {
+    .hero-bg {
+        background-image: url(../img/main.jpeg);
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll; /* `fixed` might not work well on mobile devices */
+        height: 50vh; /* Adjust height to ensure the image displays nicely without overwhelming the screen */
+    }
+}
+
+
+.app-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.app-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.app-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.app-box h3 {
+    margin-top: 25px; /* Space between the image and the text */
+    font-size: 1.0em; /* Adjust size as needed */
+    color: #333; /* Adjust color as needed */
+}
+
 /* -----------------------------------------------------------------------------
 
 # Shop Banner Styles
@@ -2250,8 +2289,7 @@ a.video-play-btn {
         }
 
         .app-box h3 {
-            margin: 0;
-            font-size: 32px;
+            font-size: 24px;
             font-weight: bold;
             color: #2d3d32;
         }
